@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Kitty Discoteque</title>
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:wght@200&family=Audiowide">
+		<script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+		<!-- <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+
+		<script type="importmap">
+			{
+				"imports": {
+					"three": "../build/three.module.js",
+					"three/addons/": "./jsm/"
+				}
+			}
+		</script> -->
+	</head>
+
+
+
+	<body>
+		<!-- LOGO -->
+		<div id="info">
+			<img src="assets/text.gif">
+		</div>
+
+		<!-- BUTTONS -->
+		<div id="help">
+			<button class="btn-help" id="btn-help" title="Help">
+				<img style="width: 50px; height: 50px" src="assets/help2.png">
+			</button>
+		</div>
+
+		<div id="music">
+			<button class="btn-music" id="btn-music" title="Change music">
+				<img style="width: 50px; height: 50px" src="assets/music2.png">
+			</button>
+		</div>
+
+		<div id="background">
+			<button class="btn-bg" id="btn-bg" title="Change background">
+				<img style="width: 50px; height: 50px" src="assets/background2.png">
+			</button>
+		</div>
+
+		<div class="easter-egg">
+			<button id="vasko_zabata">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+		</div>
+		
+
+
+		<!-- HELP MODAL -->
+		<div id="help-modal" class="help-modal">
+			<div class="help-modal-content">
+				<div class="help-modal-header">      
+					<span class="help-close">&times;</span>
+				</div>
+			
+				<div class="help-modal-body">
+					<div class="help-title" style="text-align: center; font-size: 30px; margin-top:40px;">Welcome to Kitty Discoteque</div>
+	
+					<div class="help-container-modal">
+						<p>For zooming in/out the scene, use the mouse scroll</p>
+						<p>Left click to see the scene in any angle </p>
+						<p>Ctrl + left arrow key &nbsp;-&nbsp; rotate the scene to the left </p>
+						<p>Ctrl + right arrow key &nbsp;-&nbsp; rotate the scene to the right </p>
+						<p>Enter key &nbsp;-&nbsp; the scene will rotate like crazy</p>
+						<p>Space key &nbsp;-&nbsp; stop rotating </p>
+						<p>You can also change the music and the background color.</p>
+						<br>
+						<p style="margin-top: -12px">Have fun! 🤩</p>
+					</div>
+				</div>
+			
+				<div class="help-modal-footer"></div>
+			</div>
+		</div>
+
+
+
+		<!-- MUSIC MODAL -->
+		<div id="music-modal" class="music-modal">
+			<div class="music-modal-content">
+				<div class="music-modal-header">      
+					<span class="music-close">&times;</span>
+				</div>
+			
+				<div class="music-modal-body">	
+					<div class="music-container-modal">
+						<br>
+						<button id="go_kitty" class="song_1">
+							<p><i>Go kitty go! (Unknown)&nbsp;</i></p>
+						</button>
+						<br>
+						<button id="eek_song" class="song_2">
+							<p><i>Eek! (Unknown)&nbsp;</i></p>
+						</button>
+						<button id="iloveu_baby" class="song_3">
+							<p><i>Can't Take My Eyes Off You (Boys Town Gang)&nbsp;</i></p>
+						</button>
+						<button id="funky_town" class="song_4">
+							<p><i>Funky Town (Lipps Inc.)&nbsp;</i></p>
+						</button>
+						<button id="gimme_a_man" class="song_5">
+							<p><i>Gimme! Gimme! Gimme! (ABBA)&nbsp;</i></p>
+						</button>
+						<button id="daddy_cool" class="song_6">
+							<p><i>Daddy Cool (Boney M.)&nbsp;</i></p>
+						</button>
+						<button id="crosseyed_painless" class="song_7">
+							<p><i>Crosseyed and Painless (Talking Heads)&nbsp;</i></p>
+						</button>
+						<button id="mambo_5" class="song_8">
+							<p><i>Mambo No. 5 (Lou Bega)&nbsp;</i></p>
+						</button>
+						<button id="acceptable_80s" class="song_9">
+							<p><i>Acceptable in the 80's (Calvin Harris)&nbsp;</i></p>
+						</button>
+						<button id="dream_supreme" class="song_10">
+							<p><i>Dream Supreme (Saint Pepsi)&nbsp;</i></p>
+						</button>
+						<button id="emotional_prism" class="song_11">
+							<p><i>Emotional Prism (Mikazuki BIGWAVE)&nbsp;</i></p>
+						</button>
+						<button id="on_n_on" class="song_12">
+							<p><i>on & on (piri & tommy)&nbsp;</i></p>
+						</button>
+						<button id="gypsy_mind" class="song_13">
+							<p><i>Gypsy in My Mind - Disco Rave Remix (Never Dull)&nbsp;</i></p>
+						</button>
+						<button id="mute" class="mute">
+							<p><i>MUTE</i></p>
+						</button>
+					</div>
+				</div>
+			
+				<div class="music-modal-footer"></div>
+			</div>
+		</div>
+
+
+
+		<!-- BACKGROUND MODAL -->
+		<div id="bg-modal" class="bg-modal">
+			<div class="bg-modal-content">
+				<div class="bg-modal-header">      
+					<span class="bg-close">&times;</span>
+				</div>
+			
+				<div class="bg-modal-body">	
+					<div class="bg-container-modal">
+						<p>Select a background image</p>
+						<button id="bg_1" class="bg_1_btn">
+							<img class="bg_1_img" style="width: 50px; height: 50px; border-radius: 10px;" src="assets/bg_1_btn.png">
+						</button>
+						<button id="bg_2" class="bg_2_btn">
+							<img class="bg_2_img" style="width: 50px; height: 50px; border-radius: 10px;" src="assets/bg_2_btn.png">
+						</button>
+						<button id="bg_3" class="bg_3_btn">
+							<img class="bg_3_img" style="width: 50px; height: 50px; border-radius: 10px;" src="assets/bg_3_btn.png">
+						</button>
+						<button id="bg_4" class="bg_4_btn">
+							<img class="bg_4_img" style="width: 50px; height: 50px; border-radius: 10px;" src="assets/bg_4_btn.png">
+						</button>
+						<button id="bg_5" class="bg_5_btn">
+							<img class="bg_5_img" style="width: 50px; height: 50px; border-radius: 10px;" src="assets/bg_5_btn.png">
+						</button>
+						<p style="margin-top:50px">...or select a solid color</p>
+						<div class="color-picker"></div>
+						<div id="color-indicator"></div>
+						<div id="color-picker"></div>
+					</div>
+				</div>
+			
+				<div class="bg-modal-footer"></div>
+			</div>
+		</div>
+
+		
+		<script type="module" src="js/main.js"></script>
+		<script src="js/modals.js"></script>
+	</body>
+
+</html>

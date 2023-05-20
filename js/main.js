@@ -1,9 +1,9 @@
 import * as THREE from 'three';
-import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { ShadowMapViewer } from 'three/addons/utils/ShadowMapViewer.js';
-import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
-import iro from '@jaames/iro';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import { ShadowMapViewer } from 'three/examples/jsm/utils/ShadowMapViewer';
+import { GUI } from 'three/examples/jsm/libs/lil-gui.module.min';
+// import  iro  from '@jaames/iro';
 
 let camera, scene, renderer, clock;
 let dirLight, spotLight;
@@ -214,12 +214,21 @@ function initOther() {
 	camera.add( listener );
 	const sound = new THREE.Audio( listener );
 	const audioLoader = new THREE.AudioLoader();
-	audioLoader.load('music/go_kitty.mp3', function( buffer ) {
-		sound.setBuffer( buffer );
-		sound.setLoop( true );
-		sound.setVolume( 1.0 );
-		sound.play();
+	let context;
+	window.onload = function(){
+		context  = new AudioContext();
+	}
+	window.addEventListener('load', () => {
+		context.resume().then(() => {
+			audioLoader.load('music/go_kitty.mp3', function( buffer ) {
+				sound.setBuffer( buffer );
+				sound.setLoop( true );
+				sound.setVolume( 1.0 );
+				sound.play();
+			});
+		});
 	});
+	
 
 
     // Change background music from modal

@@ -904,6 +904,13 @@ img {
   --darkreader-bg--widget-color: #b8b8b8;
   --darkreader-bg--hover-color: #c2c2c2;
   --darkreader-bg--focus-color: #b8b8b8;
+  --background-color: transparent;
+  --text-color: black;
+  --widget-color: #b8b8b8;
+  --hover-color: #c2c2c2;
+  --focus-color: #b8b8b8;
+  --bg--widget-color: #b8b8b8;
+
   --font-family: 'Dosis', sans-serif;
 }
 

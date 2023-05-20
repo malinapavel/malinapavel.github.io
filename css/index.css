@@ -899,11 +899,11 @@ img {
 }
 
 .lil-gui { 
-  --darkreader-bg--background-color: transparent;
+   /* --darkreader-bg--background-color: transparent;
   --darkreader-text--text-color: black;
   --darkreader-bg--widget-color: #b8b8b8;
   --darkreader-bg--hover-color: #c2c2c2;
-  --darkreader-bg--focus-color: #b8b8b8;
+  --darkreader-bg--focus-color: #b8b8b8; */
   --background-color: transparent;
   --text-color: black;
   --widget-color: #b8b8b8;

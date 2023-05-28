@@ -2,4 +2,4 @@
 -> check out the webpage: [https://github.com/malinapavel/malinapavel.github.io](https://malinapavel.github.io/)
 P.S. reload the page a few times until it works, the three.js imports are acting wacky
 
-![alt text]([http://url/to/img.png](https://drive.google.com/file/d/16e2_LMfnVRQQuceyiXOSn0lyoEg1I4aF/view?usp=sharing))
+![image](https://github.com/malinapavel/malinapavel.github.io/assets/102177012/4e01e331-f8d3-472b-8656-7780c5bbb39c)
